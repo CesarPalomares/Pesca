@@ -1,0 +1,17 @@
+#test#Pegell#2.04#
+#test#Doncella#0.32#
+#test#Corocoro#1.29#
+#test#Pargo de cola amarilla#0.69#
+#Laura#Serrà#0.18#
+#Laura#Doncella#0.21#
+#Laura#Vaca#0.39#
+#Laura#Doncella#0.31#
+#Laura#Vaca#0.42#
+#Laura#Pedaç#0.86#
+#Laura#Serrà#0.38#
+#Laura#Doncella#0.14#
+#Laura#Dènton#12.26#
+#Laura#Doncella#0.27#
+#Laura#Aranya de cap negre#1.56#
+#test#Esparrall#0.25#
+#test#Doncella#0.15#

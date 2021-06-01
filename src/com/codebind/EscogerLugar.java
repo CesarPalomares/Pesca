@@ -41,6 +41,7 @@ public class EscogerLugar {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setContentPane(new EscogerLugar(this.usuario).panel1);
         frame.setSize(400,100);
+        frame.setResizable(false);
         frame.setVisible(true);
     }
 }

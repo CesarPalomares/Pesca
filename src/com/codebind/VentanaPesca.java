@@ -11,6 +11,8 @@ public class VentanaPesca {
     private JLabel txt;
     private JButton atrásButton;
     private JLabel usr;
+    private JButton registroUsuarioButton;
+    private JButton registroGeneralButton;
 
     static JFrame frame = new JFrame("Simulador Pesca");
 
@@ -35,9 +37,9 @@ public class VentanaPesca {
                 Pescar p1 = new Pescar();
 
                 if (zona.equals(Zona.FLORIDA)){
-                    p1.sacarPezFlorida(r);
+                    p1.sacarPezFlorida(r,usuario);
                 }else{
-                    p1.sacarPezMediterrania(r);
+                    p1.sacarPezMediterrania(r,usuario);
                 }
 
             }
@@ -48,6 +50,22 @@ public class VentanaPesca {
                 EscogerLugar e1 = new EscogerLugar(usuario);
                 e1.iniciar();
                 frame.dispose();
+            }
+        });
+        registroGeneralButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Pescar p1 = new Pescar();
+
+                System.out.println(p1.verGeneral());
+            }
+        });
+        registroUsuarioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Pescar p1 = new Pescar();
+
+                System.out.println(p1.verUser(usuario));
             }
         });
     }
