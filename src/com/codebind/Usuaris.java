@@ -25,9 +25,11 @@ public class Usuaris {
             public void actionPerformed(ActionEvent e) {
                 //comprueba que se haya rellenado el campo
                 if (textField1.getText().equals("")){
-                    System.out.println("Por favor rellene el campo");
+                    //System.out.println("Por favor rellene el campo");
+                    JOptionPane.showMessageDialog(frame,"Por favor rellene el campo");
                 }else if(a1.getList().contains(textField1.getText())){
-                    System.out.println("Este usuario ya existe, por favor escoja otro nombre");
+                    //System.out.println("Este usuario ya existe, por favor escoja otro nombre");
+                    JOptionPane.showMessageDialog(frame,"Este usuario ya existe, por favor escoja otro nombre");
                 }else{
                     a1 = new AdminUsuaris();
                     a1.registrarUser(textField1.getText());

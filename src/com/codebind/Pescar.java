@@ -1,5 +1,6 @@
 package com.codebind;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class Pescar {
     static FileWriter reg;
 
 
-    public static void sacarPezFlorida(double r,String user){
+    public static void sacarPezFlorida(JFrame frame,double r,String user){
         try {
             Scanner myReader = new Scanner(f1);
 
@@ -26,13 +27,14 @@ public class Pescar {
                 Double prob = Double.parseDouble(pez[2]);
 
                 if (prob >= r){
-                    System.out.println("Has pescado un "+pez[1]);
-
                     Double max = Double.parseDouble(pez[4]);
                     Double min = Double.parseDouble(pez[3]);
 
                     Double pesoNum = Math.floor((Math.random() * (max - min) + min) *100)/100;
                     String peso = pesoNum.toString();
+
+                    //System.out.println("Has pescado un "+pez[1]+" de "+peso+" kilos");
+                    JOptionPane.showMessageDialog(frame,"Has pescado un "+pez[1]+" de "+peso+" kilos");
 
                     guardarPez(user,pez[1],peso);
 
@@ -46,7 +48,7 @@ public class Pescar {
         }
     }
 
-    public static void sacarPezMediterrania(double r, String user){
+    public static void sacarPezMediterrania(JFrame frame,double r, String user){
 
         try {
             Scanner myReader = new Scanner(f2);
@@ -58,13 +60,14 @@ public class Pescar {
                 Double prob = Double.parseDouble(pez[2]);
 
                 if (prob >= r){
-                    System.out.println("Has pescado un "+pez[1]);
-
                     Double max = Double.parseDouble(pez[4]);
                     Double min = Double.parseDouble(pez[3]);
 
                     Double pesoNum = Math.floor((Math.random() * (max - min) + min) *100)/100;
                     String peso = pesoNum.toString();
+
+                    //System.out.println("Has pescado un "+pez[1]+" de "+peso+" kilos");
+                    JOptionPane.showMessageDialog(frame,"Has pescado un "+pez[1]+" de "+peso+" kilos");
 
                     guardarPez(user,pez[1],peso);
                     bandera=false;

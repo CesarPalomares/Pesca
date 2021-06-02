@@ -37,9 +37,9 @@ public class VentanaPesca {
                 Pescar p1 = new Pescar();
 
                 if (zona.equals(Zona.FLORIDA)){
-                    p1.sacarPezFlorida(r,usuario);
+                    p1.sacarPezFlorida(frame,r,usuario);
                 }else{
-                    p1.sacarPezMediterrania(r,usuario);
+                    p1.sacarPezMediterrania(frame,r,usuario);
                 }
 
             }
@@ -78,6 +78,7 @@ public class VentanaPesca {
         frame.setVisible(true);
         frame.setSize(280,180);
         frame.setResizable(true);
+        frame.setLocationRelativeTo(null);
 
         System.out.println("Estás pescando en " + zona);
     }

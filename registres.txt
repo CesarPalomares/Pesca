@@ -15,3 +15,8 @@
 #Laura#Aranya de cap negre#1.56#
 #test#Esparrall#0.25#
 #test#Doncella#0.15#
+#Cesar#Corocoro#1.22#
+#Cesar#Pargo criollo#1.7#
+#Cesar#Pargo criollo#0.79#
+#Cesar#Pargo de cola amarilla#1.64#
+#Cesar#Pargo criollo#0.69#
