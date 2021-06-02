@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashMap;
 
 public class VentanaPesca {
     private JButton pescarButton;
@@ -52,12 +53,15 @@ public class VentanaPesca {
                 frame.dispose();
             }
         });
+
+        //Los dos siguientes botones muestran las listas de peces, la general y la especifica de cada usuario
         registroGeneralButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Pescar p1 = new Pescar();
 
-                System.out.println(p1.verGeneral());
+                //System.out.println(p1.verGeneral());
+                JOptionPane.showMessageDialog(frame,p1.verGeneral());
             }
         });
         registroUsuarioButton.addActionListener(new ActionListener() {
@@ -65,7 +69,8 @@ public class VentanaPesca {
             public void actionPerformed(ActionEvent e) {
                 Pescar p1 = new Pescar();
 
-                System.out.println(p1.verUser(usuario));
+                //System.out.println(p1.verUser(usuario));
+                JOptionPane.showMessageDialog(frame,p1.verUser(usuario));
             }
         });
     }

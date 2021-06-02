@@ -20,3 +20,4 @@
 #Cesar#Pargo criollo#0.79#
 #Cesar#Pargo de cola amarilla#1.64#
 #Cesar#Pargo criollo#0.69#
+#Cesar#Vaca#0.41#
